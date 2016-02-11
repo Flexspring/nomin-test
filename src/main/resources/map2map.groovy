@@ -17,3 +17,6 @@ simple ([a: Gender.MALE, b: true], [a: Gender.FEMALE, b: false])
 //convert to_b: { lower.convert(it) }
 
 
+a["birthDate"] = b["birthStr"]
+hint a: Date, b: String // Does not work...
+dateFormat "dd-MM-yyyy" // Does not work...
